@@ -1,0 +1,24 @@
+{
+    "name": "adamb/ttesthgv",
+    "type": "library",
+    "require": {
+        "adamb/ttest": "^2.1"
+    },
+    "license": "None",
+    "authors": [
+        {
+            "name": "Adam Binnersley",
+            "email": "abinnersley@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "TheoryTest\\HGV\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "TheoryTest\\HGV\\": "tests/"
+        }
+    }
+}
