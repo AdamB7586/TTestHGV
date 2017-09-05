@@ -2,6 +2,10 @@
 
 namespace TheoryTest\HGV;
 
+use DBAL\Database;
+use Smarty;
+use UserAuth\User;
+
 class TheoryTest extends \TheoryTest\Car\TheoryTest{
     protected $seconds = 5400;
     protected $section = 'aditheory';
