@@ -16,7 +16,7 @@ class TheoryTest extends \TheoryTest\Car\TheoryTest{
     public $progressTable = 'hgv_test_progress';
     public $dsaCategoriesTable = 'hgv_dsa_sections';
     
-    protected static $testType = 'hgv';
+    protected $testType = 'hgv';
     
     public function __construct(Database $db, Smarty $layout, User $user, $userID = false) {
         parent::__construct($db, $layout, $user, $userID);
