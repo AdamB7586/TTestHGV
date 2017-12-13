@@ -20,5 +20,8 @@
         "psr-4": {
             "TheoryTest\\HGV\\": "tests/"
         }
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^6.5"
     }
 }
