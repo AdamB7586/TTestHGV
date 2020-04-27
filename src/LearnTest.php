@@ -8,5 +8,4 @@ class LearnTest extends \TheoryTest\Car\LearnTest{
     public $questionsTable = 'hgv_questions';
     public $progressTable = 'hgv_progress';
     public $dsaCategoriesTable = 'hgv_sections';
-    
 }

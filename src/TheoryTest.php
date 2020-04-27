@@ -10,8 +10,6 @@ class TheoryTest extends \TheoryTest\Car\TheoryTest{
     protected $seconds = 5400;
     protected $section = 'aditheory';
     
-    protected $audioLocation = '/audio/hgv';
-    
     public $questionsTable = 'hgv_questions';
     public $progressTable = 'hgv_test_progress';
     public $dsaCategoriesTable = 'hgv_dsa_sections';
