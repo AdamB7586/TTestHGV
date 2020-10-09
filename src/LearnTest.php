@@ -2,7 +2,8 @@
 
 namespace TheoryTest\HGV;
 
-class LearnTest extends \TheoryTest\Car\LearnTest{
+class LearnTest extends \TheoryTest\Car\LearnTest
+{
     protected $testType = 'hgv';
     
     public $questionsTable = 'hgv_questions';

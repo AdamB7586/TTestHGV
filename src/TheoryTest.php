@@ -6,7 +6,8 @@ use DBAL\Database;
 use Smarty;
 use UserAuth\User;
 
-class TheoryTest extends \TheoryTest\Car\TheoryTest{
+class TheoryTest extends \TheoryTest\Car\TheoryTest
+{
     protected $seconds = 5400;
     protected $section = 'aditheory';
     
@@ -16,7 +17,8 @@ class TheoryTest extends \TheoryTest\Car\TheoryTest{
     
     protected $testType = 'hgv';
     
-    public function __construct(Database $db, Smarty $layout, User $user, $userID = false) {
+    public function __construct(Database $db, Smarty $layout, User $user, $userID = false)
+    {
         parent::__construct($db, $layout, $user, $userID);
         $this->setImagePath(ROOT.DS.'images'.DS.'hgv'.DS);
     }
