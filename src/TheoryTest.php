@@ -17,9 +17,9 @@ class TheoryTest extends \TheoryTest\Car\TheoryTest
     
     protected $testType = 'hgv';
     
-    public function __construct(Database $db, Smarty $layout, User $user, $userID = false)
+    public function __construct(Database $db, Config $config, Smarty $layout, $user, $userID = false, $templateDir = false, $theme = 'bootstrap')
     {
-        parent::__construct($db, $layout, $user, $userID);
+        parent::__construct($db, $config, $layout, $user, $userID, $templateDir, $theme);
         $this->setImagePath(ROOT.DS.'images'.DS.'hgv'.DS);
     }
 }
