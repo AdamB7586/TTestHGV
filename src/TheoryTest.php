@@ -8,7 +8,7 @@ use UserAuth\User;
 
 class TheoryTest extends \TheoryTest\Car\TheoryTest
 {
-    protected $seconds = 5400;
+    protected $seconds = 6900;
     protected $section = 'aditheory';
     
     public $questionsTable = 'hgv_questions';
@@ -31,5 +31,17 @@ class TheoryTest extends \TheoryTest\Car\TheoryTest
     {
         parent::__construct($db, $config, $layout, $user, $userID, $templateDir, $theme);
         $this->setImagePath(ROOT.DS.'images'.DS.'hgv'.DS);
+    }
+    
+    /**
+     * Sets the tables
+     */
+    protected function setTables()
+    {
+        $this->testsTable = $this->config->table_hgv_positions;
+        $this->questionsTable = $this->config->table_hgv_questions;
+        $this->learningProgressTable = $this->config->table_hgv_progress;
+        $this->progressTable = $this->config->table_hgv_test_progress;
+        $this->dvsaCatTable = $this->config->table_hgv_dvsa_sections;
     }
 }
