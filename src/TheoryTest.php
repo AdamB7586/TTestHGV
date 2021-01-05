@@ -15,8 +15,6 @@ class TheoryTest extends \TheoryTest\Car\TheoryTest
     public $progressTable = 'hgv_test_progress';
     public $dsaCategoriesTable = 'hgv_dsa_sections';
     
-    protected $testType = 'hgv';
-    
     /**
      * Connects to the database sets the current user and gets any user answers
      * @param Database $db This needs to be an instance of the database class

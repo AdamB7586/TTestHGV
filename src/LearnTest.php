@@ -4,8 +4,6 @@ namespace TheoryTest\HGV;
 
 class LearnTest extends \TheoryTest\Car\LearnTest
 {
-    protected $testType = 'hgv';
-       
     /**
      * Sets the tables
      */
