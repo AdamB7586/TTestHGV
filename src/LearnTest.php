@@ -7,7 +7,7 @@ class LearnTest extends \TheoryTest\Car\LearnTest
     /**
      * Sets the tables
      */
-    protected function setTables()
+    public function setTables()
     {
         $this->questionsTable = $this->config->table_hgv_questions;
         $this->learningProgressTable = $this->config->table_hgv_progress;

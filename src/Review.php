@@ -16,7 +16,7 @@ class Review extends \TheoryTest\Car\Review
     public function getSectionTables()
     {
         return [
-            ['table' => $this->config->table_hgv_dvsa_sections, 'name' => 'DVSA Category', 'section' => 'dvsa', 'sectionNo' => 'dsacat']
+            ['table' => 'hgv_dvsa_sections', 'name' => 'DVSA Category', 'section' => 'dvsa', 'sectionNo' => 'dsacat']
         ];
     }
     
