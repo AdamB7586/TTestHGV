@@ -4,16 +4,10 @@ namespace TheoryTest\HGV;
 
 use DBAL\Database;
 use Smarty;
-use UserAuth\User;
 
-class TheoryTest extends \TheoryTest\Car\TheoryTest
+class TheoryTest extends \TheoryTest\ADI\TheoryTest
 {
     protected $seconds = 6900;
-    protected $section = 'aditheory';
-    
-    public $questionsTable = 'hgv_questions';
-    public $progressTable = 'hgv_test_progress';
-    public $dsaCategoriesTable = 'hgv_dsa_sections';
     
     /**
      * Connects to the database sets the current user and gets any user answers
@@ -34,9 +28,9 @@ class TheoryTest extends \TheoryTest\Car\TheoryTest
     /**
      * Sets the tables
      */
-    protected function setTables()
+    public function setTables()
     {
-        $this->testsTable = $this->config->table_hgv_positions;
+        $this->testsTable = $this->config->table_hgv_theory_tests;
         $this->questionsTable = $this->config->table_hgv_questions;
         $this->learningProgressTable = $this->config->table_hgv_progress;
         $this->progressTable = $this->config->table_hgv_test_progress;

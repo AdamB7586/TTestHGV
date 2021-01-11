@@ -2,7 +2,7 @@
     "name": "adamb/ttesthgv",
     "type": "library",
     "require": {
-        "adamb/ttest": "*"
+        "adamb/ttestadi": "*"
     },
     "license": "proprietary",
     "authors": [
