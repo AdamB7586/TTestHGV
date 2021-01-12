@@ -9,6 +9,7 @@ use Smarty;
 class TheoryTest extends \TheoryTest\ADI\TheoryTest
 {
     protected $seconds = 6900;
+    protected $scriptVar = 'hgv';
     
     /**
      * Connects to the database sets the current user and gets any user answers
