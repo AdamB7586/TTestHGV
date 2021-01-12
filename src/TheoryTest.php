@@ -24,7 +24,7 @@ class TheoryTest extends \TheoryTest\ADI\TheoryTest
     public function __construct(Database $db, Config $config, Smarty $layout, $user, $userID = false, $templateDir = false, $theme = 'bootstrap')
     {
         parent::__construct($db, $config, $layout, $user, $userID, $templateDir, $theme);
-        $this->setImagePath(ROOT.DS.'images'.DS.'hgv'.DS);
+        $this->setImagePath(DS.'images'.DS.'hgv'.DS);
     }
     
     /**
