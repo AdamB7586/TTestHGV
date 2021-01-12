@@ -3,6 +3,7 @@
 namespace TheoryTest\HGV;
 
 use DBAL\Database;
+use Configuration\Config;
 use Smarty;
 
 class TheoryTest extends \TheoryTest\ADI\TheoryTest
