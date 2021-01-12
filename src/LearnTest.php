@@ -2,6 +2,10 @@
 
 namespace TheoryTest\HGV;
 
+use DBAL\Database;
+use Configuration\Config;
+use Smarty;
+
 class LearnTest extends \TheoryTest\Car\LearnTest
 {
     /**
