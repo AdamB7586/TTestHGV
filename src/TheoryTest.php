@@ -38,4 +38,36 @@ class TheoryTest extends \TheoryTest\ADI\TheoryTest
         $this->progressTable = $this->config->table_hgv_test_progress;
         $this->dvsaCatTable = $this->config->table_hgv_dvsa_sections;
     }
+
+    /**
+     * Create a new ADI Theory Test for the test number given
+     * @param int $theorytest Should be the test number
+     * @return string Returns the HTML for a test
+     */
+    public function createNewTest($theorytest = 1)
+    {
+        $this->clearSettings();
+        $this->setTest($theorytest);
+        if (method_exists($this->user, 'checkUserAccess')) {
+            $this->user->checkUserAccess($theorytest, 'hgv');
+        }
+        $this->setTestName();
+        if ($this->anyExisting() === false) {
+            $this->chooseQuestions($theorytest);
+        }
+        return $this->buildTest();
+    }
+    
+    /**
+     * Sets the current test name
+     * @param string $name The name of the test you want to set it to, if left blank will be Theory Test plus test number
+     */
+    protected function setTestName($name = '')
+    {
+        if (!empty($name)) {
+            $this->testName = $name;
+        } else {
+            $this->testName = 'HGV Test '.$this->getTest();
+        }
+    }
 }
