@@ -1,5 +1,5 @@
 <?php
-namespace TheoryTest\ADI;
+namespace TheoryTest\HGV;
 
 class DeleteData extends \TheoryTest\Car\DeleteData
 {
