@@ -52,7 +52,7 @@ class RandomTest extends TheoryTest
     UNION (SELECT `prim` FROM `".$this->questionsTable."` WHERE `dsacat` = '12' AND `alertcasestudy` IS NULL ORDER BY RAND() LIMIT 3)
     UNION (SELECT `prim` FROM `".$this->questionsTable."` WHERE `dsacat` = '13' AND `alertcasestudy` IS NULL ORDER BY RAND() LIMIT 7)
     UNION (SELECT `prim` FROM `".$this->questionsTable."` WHERE `dsacat` = '14' AND `alertcasestudy` IS NULL ORDER BY RAND() LIMIT 7)
-    UNION (SELECT `prim` FROM `".$this->questionsTable."` WHERE `dsacat` = '15' AND `alertcasestudy` IS NULL ORDER BY RAND() LIMIT 8) ORDER BY RAND()) as a;");
+    UNION (SELECT `prim` FROM `".$this->questionsTable."` WHERE `dsacat` = '15' AND `alertcasestudy` IS NULL ORDER BY RAND() LIMIT 8) ORDER BY RAND()) as a;", [], false);
          
         unset($_SESSION['test'.$this->getTest()]);
         foreach ($questions as $q => $question) {
